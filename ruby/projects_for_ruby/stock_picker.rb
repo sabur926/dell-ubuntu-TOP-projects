@@ -35,7 +35,7 @@ def stock_picker
   
   puts "\n--- Results ---"
   puts "Best Tradintg days are:" "#{[prices.index(prices.max),prices.index(prices.min)]}"
-  puts "You make a profit of $#{max_price - min_price}"
+  puts "You make a profit of $#{max_price} - #{min_price}"
 
   puts "\n--- Results ---"
   prices.each_with_index {|price, index| puts "Best Trading days are #{max_price} at #{prices.index} days"}
